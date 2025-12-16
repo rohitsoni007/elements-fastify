@@ -1,0 +1,53 @@
+{
+  "name": "elements-fastify",
+  "version": "0.0.1",
+  "description": "Fastify plugin for serving Stoplight Elements API documentation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
+    "example": "node examples/basic-usage.js",
+    "prepublishOnly": "npm test && npm run format:check"
+  },
+  "keywords": [
+    "fastify",
+    "plugin",
+    "stoplight",
+    "elements",
+    "api",
+    "documentation",
+    "openapi",
+    "swagger",
+    "redoc"
+  ],
+  "author": "Rohit Soni",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "peerDependencies": {
+    "fastify": "^4.0.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "fastify": "^5.6.2",
+    "jest": "^30.2.0",
+    "prettier": "^3.7.4"
+  },
+  "dependencies": {
+    "@fastify/static": "^8.3.0",
+    "elements-dist": "^0.0.3",
+    "fastify-plugin": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohitsoni007/elements-fastify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rohitsoni007/elements-fastify/issues"
+  },
+  "homepage": "https://github.com/rohitsoni007/elements-fastify#readme"
+}
