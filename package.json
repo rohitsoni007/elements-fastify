@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "Fastify plugin for serving Stoplight Elements API documentation",
   "main": "src/index.js",
+  "files": [
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
